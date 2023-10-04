@@ -1,4 +1,4 @@
-# openocean_client.WalletApi
+# openocean_api.WalletApi
 
 All URIs are relative to *https://open-api.openocean.finance/*
 
@@ -18,12 +18,12 @@ create user's wallet
 ```python
 from __future__ import print_function
 import time
-import openocean_client
-from openocean_client.rest import ApiException
+import openocean_api
+from openocean_api.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = openocean_client.WalletApi()
+api_instance = openocean_api.WalletApi()
 chain = 'chain_example' # str | eg: bsc chain code 
 
 try:
@@ -65,12 +65,12 @@ get balance by account
 ```python
 from __future__ import print_function
 import time
-import openocean_client
-from openocean_client.rest import ApiException
+import openocean_api
+from openocean_api.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = openocean_client.WalletApi()
+api_instance = openocean_api.WalletApi()
 chain = 'chain_example' # str | eg: bsc chain code 
 account = 'account_example' # str | eg: 0x000... user's wallet address 
 in_token_address = 'in_token_address_example' # str | eg: token address 

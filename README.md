@@ -23,7 +23,7 @@ pip install git+https://github.com/GIT_USER_ID/GIT_REPO_ID.git
 
 Then import the package:
 ```python
-import openocean_client 
+import openocean_api 
 ```
 
 ### Setuptools
@@ -37,7 +37,7 @@ python setup.py install --user
 
 Then import the package:
 ```python
-import openocean_client
+import openocean_api
 ```
 
 ## Getting Started
@@ -47,12 +47,12 @@ Please follow the [installation procedure](#installation--usage) and then run th
 ```python
 from __future__ import print_function
 import time
-import openocean_client
-from openocean_client.rest import ApiException
+import openocean_api
+from openocean_api.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = openocean_client.CrossApi(openocean_client.ApiClient(configuration))
+api_instance = openocean_api.CrossApi(openocean_api.ApiClient(configuration))
 chain_id = 1.2 # float | eg:56 chainId 
 hash = 'hash_example' # str | eg:0xb6a66f9676ed430407bc8b96063c8aab5ca663c45ec5d63047ade44061475e4a 
 
@@ -63,7 +63,7 @@ except ApiException as e:
     print("Exception when calling CrossApi->controller_cross_get_cross_status: %s\n" % e)
 
 # create an instance of the API class
-api_instance = openocean_client.CrossApi(openocean_client.ApiClient(configuration))
+api_instance = openocean_api.CrossApi(openocean_api.ApiClient(configuration))
 account = 'account_example' # str | user address 
 
 try:
@@ -73,7 +73,7 @@ except ApiException as e:
     print("Exception when calling CrossApi->controller_cross_get_cross_transaction: %s\n" % e)
 
 # create an instance of the API class
-api_instance = openocean_client.CrossApi(openocean_client.ApiClient(configuration))
+api_instance = openocean_api.CrossApi(openocean_api.ApiClient(configuration))
 from_chain_id = 1.2 # float | source_chain 
 to_chain_id = 1.2 # float | dst_chain 
 address = 'address_example' # str | eg: 0x55d398326f99059ff775485246999027b3197955 token address 
@@ -85,7 +85,7 @@ except ApiException as e:
     print("Exception when calling CrossApi->controller_cross_min_send: %s\n" % e)
 
 # create an instance of the API class
-api_instance = openocean_client.CrossApi(openocean_client.ApiClient(configuration))
+api_instance = openocean_api.CrossApi(openocean_api.ApiClient(configuration))
 from_chain_id = 1.2 # float | eg:56 source chain 
 to_chain_id = 1.2 # float | eg:137 dst chain 
 from_symbol = 'from_symbol_example' # str | eg:USDT source chain token symbol 

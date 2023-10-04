@@ -22,9 +22,9 @@ import tempfile
 import six
 from six.moves.urllib.parse import quote
 
-from openocean_client.configuration import Configuration
-import openocean_client.models
-from openocean_client import rest
+from openocean_api.configuration import Configuration
+import openocean_api.models
+from openocean_api import rest
 
 
 class ApiClient(object):
@@ -257,7 +257,7 @@ class ApiClient(object):
             if klass in self.NATIVE_TYPES_MAPPING:
                 klass = self.NATIVE_TYPES_MAPPING[klass]
             else:
-                klass = getattr(openocean_client.models, klass)
+                klass = getattr(openocean_api.models, klass)
 
         if klass in self.PRIMITIVE_TYPES:
             return self.__deserialize_primitive(data, klass)

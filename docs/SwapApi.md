@@ -1,4 +1,4 @@
-# openocean_client.SwapApi
+# openocean_api.SwapApi
 
 All URIs are relative to *https://open-api.openocean.finance/*
 
@@ -20,12 +20,12 @@ get user's transaction by hash
 ```python
 from __future__ import print_function
 import time
-import openocean_client
-from openocean_client.rest import ApiException
+import openocean_api
+from openocean_api.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = openocean_client.SwapApi()
+api_instance = openocean_api.SwapApi()
 chain = 'chain_example' # str | eg:bsc support chains: https://docs.openocean.finance/dev/supported-chains 
 hash = 'hash_example' # str | eg: 0x4e32ab6e0e9ff2db6157a14b0d4bac018f1633e14b3cccbd56541f24f191a5b4 hash 
 
@@ -69,12 +69,12 @@ query demo
 ```python
 from __future__ import print_function
 import time
-import openocean_client
-from openocean_client.rest import ApiException
+import openocean_api
+from openocean_api.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = openocean_client.SwapApi()
+api_instance = openocean_api.SwapApi()
 chain = 'chain_example' # str | eg:bsc support chains: https://docs.openocean.finance/dev/supported-chains 
 in_token_address = 'in_token_address_example' # str | eg:0x55d398326f99059ff775485246999027b3197955 you want to sell token address 
 out_token_address = 'out_token_address_example' # str | eg:0x8ac76a51cc950d9822d68b83fe1ad97b32cd580d you want to buy token address 
@@ -126,12 +126,12 @@ get swap data
 ```python
 from __future__ import print_function
 import time
-import openocean_client
-from openocean_client.rest import ApiException
+import openocean_api
+from openocean_api.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = openocean_client.SwapApi()
+api_instance = openocean_api.SwapApi()
 chain = 'chain_example' # str | eg:bsc support chains: https://docs.openocean.finance/dev/supported-chains 
 in_token_address = 'in_token_address_example' # str | eg:0x55d398326f99059ff775485246999027b3197955 you want to sell token address 
 out_token_address = 'out_token_address_example' # str | eg:0x8ac76a51cc950d9822d68b83fe1ad97b32cd580d you want to buy token address 
@@ -185,12 +185,12 @@ get chain token list
 ```python
 from __future__ import print_function
 import time
-import openocean_client
-from openocean_client.rest import ApiException
+import openocean_api
+from openocean_api.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = openocean_client.SwapApi()
+api_instance = openocean_api.SwapApi()
 chain = 'chain_example' # str | eg:bsc support chains: https://docs.openocean.finance/dev/supported-chains 
 
 try:

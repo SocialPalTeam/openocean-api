@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import openocean_client
-from openocean_client.models.activity_by_address import ActivityByAddress  # noqa: E501
-from openocean_client.rest import ApiException
+import openocean_api
+from openocean_api.models.activity_by_address import ActivityByAddress  # noqa: E501
+from openocean_api.rest import ApiException
 
 
 class TestActivityByAddress(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestActivityByAddress(unittest.TestCase):
     def testActivityByAddress(self):
         """Test ActivityByAddress"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = openocean_client.models.activity_by_address.ActivityByAddress()  # noqa: E501
+        # model = openocean_api.models.activity_by_address.ActivityByAddress()  # noqa: E501
         pass
 
 

@@ -1,4 +1,4 @@
-# openocean_client.LimitOrderApi
+# openocean_api.LimitOrderApi
 
 All URIs are relative to *https://open-api.openocean.finance/*
 
@@ -18,12 +18,12 @@ get limit order by address
 ```python
 from __future__ import print_function
 import time
-import openocean_client
-from openocean_client.rest import ApiException
+import openocean_api
+from openocean_api.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = openocean_client.LimitOrderApi()
+api_instance = openocean_api.LimitOrderApi()
 chain_id = 'chain_id_example' # str | eg: 1 chain id 
 address = 'address_example' # str | eg:0x000... user's wallet address 
 statuses = 'statuses_example' # str | eg:[1,3,4] order status code 1-unfill, 3-cancel,  (optional)
@@ -69,12 +69,12 @@ get all limit order
 ```python
 from __future__ import print_function
 import time
-import openocean_client
-from openocean_client.rest import ApiException
+import openocean_api
+from openocean_api.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = openocean_client.LimitOrderApi()
+api_instance = openocean_api.LimitOrderApi()
 chain_id = 'chain_id_example' # str | eg: 1 chain id 
 statuses = 'statuses_example' # str | eg:[1,3,4] order status code 1-unfill, 3-cancel,  (optional)
 

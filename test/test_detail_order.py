@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import openocean_client
-from openocean_client.models.detail_order import DetailOrder  # noqa: E501
-from openocean_client.rest import ApiException
+import openocean_api
+from openocean_api.models.detail_order import DetailOrder  # noqa: E501
+from openocean_api.rest import ApiException
 
 
 class TestDetailOrder(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestDetailOrder(unittest.TestCase):
     def testDetailOrder(self):
         """Test DetailOrder"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = openocean_client.models.detail_order.DetailOrder()  # noqa: E501
+        # model = openocean_api.models.detail_order.DetailOrder()  # noqa: E501
         pass
 
 

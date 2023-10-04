@@ -1,4 +1,4 @@
-# openocean_client.CrossApi
+# openocean_api.CrossApi
 
 All URIs are relative to *https://open-api.openocean.finance/*
 
@@ -20,12 +20,12 @@ query demo
 ```python
 from __future__ import print_function
 import time
-import openocean_client
-from openocean_client.rest import ApiException
+import openocean_api
+from openocean_api.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = openocean_client.CrossApi()
+api_instance = openocean_api.CrossApi()
 chain_id = 1.2 # float | eg:56 chainId 
 hash = 'hash_example' # str | eg:0xb6a66f9676ed430407bc8b96063c8aab5ca663c45ec5d63047ade44061475e4a 
 
@@ -69,12 +69,12 @@ query demo
 ```python
 from __future__ import print_function
 import time
-import openocean_client
-from openocean_client.rest import ApiException
+import openocean_api
+from openocean_api.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = openocean_client.CrossApi()
+api_instance = openocean_api.CrossApi()
 account = 'account_example' # str | user address 
 
 try:
@@ -116,12 +116,12 @@ query demo
 ```python
 from __future__ import print_function
 import time
-import openocean_client
-from openocean_client.rest import ApiException
+import openocean_api
+from openocean_api.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = openocean_client.CrossApi()
+api_instance = openocean_api.CrossApi()
 from_chain_id = 1.2 # float | source_chain 
 to_chain_id = 1.2 # float | dst_chain 
 address = 'address_example' # str | eg: 0x55d398326f99059ff775485246999027b3197955 token address 
@@ -167,12 +167,12 @@ query demo
 ```python
 from __future__ import print_function
 import time
-import openocean_client
-from openocean_client.rest import ApiException
+import openocean_api
+from openocean_api.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = openocean_client.CrossApi()
+api_instance = openocean_api.CrossApi()
 from_chain_id = 1.2 # float | eg:56 source chain 
 to_chain_id = 1.2 # float | eg:137 dst chain 
 from_symbol = 'from_symbol_example' # str | eg:USDT source chain token symbol 

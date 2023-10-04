@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import openocean_client
-from openocean_client.api.nft_api import NftApi  # noqa: E501
-from openocean_client.rest import ApiException
+import openocean_api
+from openocean_api.api.nft_api import NftApi  # noqa: E501
+from openocean_api.rest import ApiException
 
 
 class TestNftApi(unittest.TestCase):

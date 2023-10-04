@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import openocean_client
-from openocean_client.models.create_wallet_request import CreateWalletRequest  # noqa: E501
-from openocean_client.rest import ApiException
+import openocean_api
+from openocean_api.models.create_wallet_request import CreateWalletRequest  # noqa: E501
+from openocean_api.rest import ApiException
 
 
 class TestCreateWalletRequest(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestCreateWalletRequest(unittest.TestCase):
     def testCreateWalletRequest(self):
         """Test CreateWalletRequest"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = openocean_client.models.create_wallet_request.CreateWalletRequest()  # noqa: E501
+        # model = openocean_api.models.create_wallet_request.CreateWalletRequest()  # noqa: E501
         pass
 
 

@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import openocean_client
-from openocean_client.models.owner import Owner  # noqa: E501
-from openocean_client.rest import ApiException
+import openocean_api
+from openocean_api.models.owner import Owner  # noqa: E501
+from openocean_api.rest import ApiException
 
 
 class TestOwner(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestOwner(unittest.TestCase):
     def testOwner(self):
         """Test Owner"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = openocean_client.models.owner.Owner()  # noqa: E501
+        # model = openocean_api.models.owner.Owner()  # noqa: E501
         pass
 
 

@@ -1,4 +1,4 @@
-# openocean_client.NftApi
+# openocean_api.NftApi
 
 All URIs are relative to *https://open-api.openocean.finance/*
 
@@ -33,13 +33,13 @@ get sell signature data
 ```python
 from __future__ import print_function
 import time
-import openocean_client
-from openocean_client.rest import ApiException
+import openocean_api
+from openocean_api.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = openocean_client.NftApi()
-body = openocean_client.SellRequest() # SellRequest | 
+api_instance = openocean_api.NftApi()
+body = openocean_api.SellRequest() # SellRequest | 
 chain = 'chain_example' # str | eg:eth,avax,polygon,arbitrum,optimism,solana chain code 
 
 try:
@@ -83,13 +83,13 @@ post signature data to market
 ```python
 from __future__ import print_function
 import time
-import openocean_client
-from openocean_client.rest import ApiException
+import openocean_api
+from openocean_api.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = openocean_client.NftApi()
-body = openocean_client.SignRequest() # SignRequest | 
+api_instance = openocean_api.NftApi()
+body = openocean_api.SignRequest() # SignRequest | 
 chain = 'chain_example' # str | eg:eth,avax,polygon,arbitrum,optimism,solana chain code 
 
 try:
@@ -133,13 +133,13 @@ get offer signature data
 ```python
 from __future__ import print_function
 import time
-import openocean_client
-from openocean_client.rest import ApiException
+import openocean_api
+from openocean_api.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = openocean_client.NftApi()
-body = openocean_client.OfferRequest() # OfferRequest | 
+api_instance = openocean_api.NftApi()
+body = openocean_api.OfferRequest() # OfferRequest | 
 chain = 'chain_example' # str | eg:eth,avax,polygon,arbitrum,optimism,solana chain code 
 
 try:
@@ -183,13 +183,13 @@ get buy transaction
 ```python
 from __future__ import print_function
 import time
-import openocean_client
-from openocean_client.rest import ApiException
+import openocean_api
+from openocean_api.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = openocean_client.NftApi()
-body = openocean_client.BuyRequest() # BuyRequest | 
+api_instance = openocean_api.NftApi()
+body = openocean_api.BuyRequest() # BuyRequest | 
 chain = 'chain_example' # str | eg:eth,avax,polygon,arbitrum,optimism,solana chain code 
 
 try:
@@ -233,12 +233,12 @@ get nft info and listings by nft
 ```python
 from __future__ import print_function
 import time
-import openocean_client
-from openocean_client.rest import ApiException
+import openocean_api
+from openocean_api.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = openocean_client.NftApi()
+api_instance = openocean_api.NftApi()
 chain = 'chain_example' # str | eg:eth,avax,polygon,arbitrum,optimism,solana chain code 
 address = 'address_example' # str | 0x16f71d593bc6446a16ef84551cf8d76ff5973db1 collection address 
 token_id = 'token_id_example' # str | eg:2 nft id 
@@ -289,12 +289,12 @@ get collections by filters
 ```python
 from __future__ import print_function
 import time
-import openocean_client
-from openocean_client.rest import ApiException
+import openocean_api
+from openocean_api.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = openocean_client.NftApi()
+api_instance = openocean_api.NftApi()
 chain = 'chain_example' # str | eg:eth,avax,polygon,arbitrum,optimism,solana chain code 
 filters = 'filters_example' # str | collectionFilter filter condition 
 offset = 'offset_example' # str | eg:MTAwMDAwMDAwMDAwMDAwMF8yNTQx pagination index(response next)  (optional)
@@ -345,12 +345,12 @@ get all listings
 ```python
 from __future__ import print_function
 import time
-import openocean_client
-from openocean_client.rest import ApiException
+import openocean_api
+from openocean_api.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = openocean_client.NftApi()
+api_instance = openocean_api.NftApi()
 chain = 'chain_example' # str | eg:eth,avax,polygon,arbitrum,optimism,solana chain code 
 address = 'address_example' # str | wallet address 
 offset = 'offset_example' # str | eg:1 pagination index(response next)  (optional)
@@ -399,13 +399,13 @@ check order status
 ```python
 from __future__ import print_function
 import time
-import openocean_client
-from openocean_client.rest import ApiException
+import openocean_api
+from openocean_api.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = openocean_client.NftApi()
-body = openocean_client.CheckOrderRequest() # CheckOrderRequest | 
+api_instance = openocean_api.NftApi()
+body = openocean_api.CheckOrderRequest() # CheckOrderRequest | 
 chain = 'chain_example' # str | eg:eth,avax,polygon,arbitrum,optimism,solana chain code 
 
 try:
@@ -449,13 +449,13 @@ get swap outAmount data
 ```python
 from __future__ import print_function
 import time
-import openocean_client
-from openocean_client.rest import ApiException
+import openocean_api
+from openocean_api.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = openocean_client.NftApi()
-body = openocean_client.SwapRequest() # SwapRequest | 
+api_instance = openocean_api.NftApi()
+body = openocean_api.SwapRequest() # SwapRequest | 
 chain = 'chain_example' # str | eg:eth,avax,polygon,arbitrum,optimism,solana chain code 
 
 try:
@@ -499,12 +499,12 @@ get collection all nfts listing by collection address
 ```python
 from __future__ import print_function
 import time
-import openocean_client
-from openocean_client.rest import ApiException
+import openocean_api
+from openocean_api.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = openocean_client.NftApi()
+api_instance = openocean_api.NftApi()
 chain = 'chain_example' # str | eg:eth,avax,polygon,arbitrum,optimism,solana chain code 
 filters = 'filters_example' # str | orderFilter filter condition 
 offset = 'offset_example' # str | eg:MTAwMDAwMDAwMDAwMDAwMF8yNTQx pagination index(response next)  (optional)
@@ -557,12 +557,12 @@ get all activity by wallet address
 ```python
 from __future__ import print_function
 import time
-import openocean_client
-from openocean_client.rest import ApiException
+import openocean_api
+from openocean_api.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = openocean_client.NftApi()
+api_instance = openocean_api.NftApi()
 chain = 'chain_example' # str | eg:eth,avax,polygon,arbitrum,optimism,solana chain code 
 address = 'address_example' # str | wallet address 
 offset = 'offset_example' # str | eg:MTAwMDAwMDAwMDAwMDAwMF8yNTQx pagination index(response next)  (optional)
@@ -611,12 +611,12 @@ get collection ranking by chain
 ```python
 from __future__ import print_function
 import time
-import openocean_client
-from openocean_client.rest import ApiException
+import openocean_api
+from openocean_api.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = openocean_client.NftApi()
+api_instance = openocean_api.NftApi()
 chain = 'chain_example' # str | eg:eth,avax,polygon,arbitrum,optimism,solana chain code 
 time = 'time_example' # str | eg:1d,7d,30d,all time period  (optional)
 offset = 'offset_example' # str | eg:0 pagination index  (optional)
@@ -665,12 +665,12 @@ get all nfts
 ```python
 from __future__ import print_function
 import time
-import openocean_client
-from openocean_client.rest import ApiException
+import openocean_api
+from openocean_api.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = openocean_client.NftApi()
+api_instance = openocean_api.NftApi()
 chain = 'chain_example' # str | eg:eth,avax,polygon,arbitrum,optimism,solana chain code 
 address = 'address_example' # str | wallet address 
 offset = 'offset_example' # str | eg:1 pagination index(response next)  (optional)
@@ -719,12 +719,12 @@ get Quote outAmount data
 ```python
 from __future__ import print_function
 import time
-import openocean_client
-from openocean_client.rest import ApiException
+import openocean_api
+from openocean_api.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = openocean_client.NftApi()
+api_instance = openocean_api.NftApi()
 chain = 'chain_example' # str | eg:eth,avax,polygon,arbitrum,optimism,solana chain code 
 
 try:
@@ -767,13 +767,13 @@ cancel listing and offer
 ```python
 from __future__ import print_function
 import time
-import openocean_client
-from openocean_client.rest import ApiException
+import openocean_api
+from openocean_api.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = openocean_client.NftApi()
-body = openocean_client.CancelRequest() # CancelRequest | 
+api_instance = openocean_api.NftApi()
+body = openocean_api.CancelRequest() # CancelRequest | 
 chain = 'chain_example' # str | eg:eth,avax,polygon,arbitrum,optimism,solana chain code 
 
 try:
@@ -817,12 +817,12 @@ get all activity by collection or nft
 ```python
 from __future__ import print_function
 import time
-import openocean_client
-from openocean_client.rest import ApiException
+import openocean_api
+from openocean_api.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = openocean_client.NftApi()
+api_instance = openocean_api.NftApi()
 chain = 'chain_example' # str | eg:eth,avax,polygon,arbitrum,optimism,solana chain code 
 collection = 'collection_example' # str | ranking response id(address or slug) 
 collection_slug = 'collection_slug_example' # str | collection slug  (optional)
@@ -875,12 +875,12 @@ get all offers
 ```python
 from __future__ import print_function
 import time
-import openocean_client
-from openocean_client.rest import ApiException
+import openocean_api
+from openocean_api.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = openocean_client.NftApi()
+api_instance = openocean_api.NftApi()
 chain = 'chain_example' # str | eg:eth,avax,polygon,arbitrum,optimism,solana chain code 
 address = 'address_example' # str | wallet address 
 offset = 'offset_example' # str | eg:1 pagination index(response next)  (optional)
