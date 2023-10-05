@@ -1,6 +1,6 @@
 # openocean_api.NftApi
 
-All URIs are relative to *https://open-api.openocean.finance/*
+All URIs are relative to *https://open-api.openocean.finance*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -22,8 +22,9 @@ Method | HTTP request | Description
 [**controller_nft_swap**](NftApi.md#controller_nft_swap) | **GET** /nft/v1/{chain}/collection/activity | Collection Activity 
 [**controller_nft_testscan**](NftApi.md#controller_nft_testscan) | **GET** /nft/v1/{chain}/offers | Offers 
 
+
 # **controller_nft_assets**
-> SellResponse controller_nft_assets(body, chain)
+> SellResponse controller_nft_assets(chain, body)
 
 Create Listing 
 
@@ -39,12 +40,12 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = openocean_api.NftApi()
-body = openocean_api.SellRequest() # SellRequest | 
 chain = 'chain_example' # str | eg:eth,avax,polygon,arbitrum,optimism,solana chain code 
+body = openocean_api.SellRequest() # SellRequest | 
 
 try:
     # Create Listing 
-    api_response = api_instance.controller_nft_assets(body, chain)
+    api_response = api_instance.controller_nft_assets(chain, body)
     pprint(api_response)
 except ApiException as e:
     print("Exception when calling NftApi->controller_nft_assets: %s\n" % e)
@@ -54,8 +55,8 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**SellRequest**](SellRequest.md)|  | 
  **chain** | **str**| eg:eth,avax,polygon,arbitrum,optimism,solana chain code  | 
+ **body** | [**SellRequest**](SellRequest.md)|  | 
 
 ### Return type
 
@@ -73,7 +74,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **controller_nft_buy**
-> SignResponse controller_nft_buy(body, chain)
+> SignResponse controller_nft_buy(chain, body)
 
 Submit Order 
 
@@ -89,12 +90,12 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = openocean_api.NftApi()
-body = openocean_api.SignRequest() # SignRequest | 
 chain = 'chain_example' # str | eg:eth,avax,polygon,arbitrum,optimism,solana chain code 
+body = openocean_api.SignRequest() # SignRequest | 
 
 try:
     # Submit Order 
-    api_response = api_instance.controller_nft_buy(body, chain)
+    api_response = api_instance.controller_nft_buy(chain, body)
     pprint(api_response)
 except ApiException as e:
     print("Exception when calling NftApi->controller_nft_buy: %s\n" % e)
@@ -104,8 +105,8 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**SignRequest**](SignRequest.md)|  | 
  **chain** | **str**| eg:eth,avax,polygon,arbitrum,optimism,solana chain code  | 
+ **body** | [**SignRequest**](SignRequest.md)|  | 
 
 ### Return type
 
@@ -123,7 +124,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **controller_nft_check_order**
-> SellResponse controller_nft_check_order(body, chain)
+> SellResponse controller_nft_check_order(chain, body)
 
 Create Offer 
 
@@ -139,12 +140,12 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = openocean_api.NftApi()
-body = openocean_api.OfferRequest() # OfferRequest | 
 chain = 'chain_example' # str | eg:eth,avax,polygon,arbitrum,optimism,solana chain code 
+body = openocean_api.OfferRequest() # OfferRequest | 
 
 try:
     # Create Offer 
-    api_response = api_instance.controller_nft_check_order(body, chain)
+    api_response = api_instance.controller_nft_check_order(chain, body)
     pprint(api_response)
 except ApiException as e:
     print("Exception when calling NftApi->controller_nft_check_order: %s\n" % e)
@@ -154,8 +155,8 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**OfferRequest**](OfferRequest.md)|  | 
  **chain** | **str**| eg:eth,avax,polygon,arbitrum,optimism,solana chain code  | 
+ **body** | [**OfferRequest**](OfferRequest.md)|  | 
 
 ### Return type
 
@@ -173,7 +174,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **controller_nft_collections**
-> BuyResponse controller_nft_collections(body, chain)
+> BuyResponse controller_nft_collections(chain, body)
 
 Buy 
 
@@ -189,12 +190,12 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = openocean_api.NftApi()
-body = openocean_api.BuyRequest() # BuyRequest | 
 chain = 'chain_example' # str | eg:eth,avax,polygon,arbitrum,optimism,solana chain code 
+body = openocean_api.BuyRequest() # BuyRequest | 
 
 try:
     # Buy 
-    api_response = api_instance.controller_nft_collections(body, chain)
+    api_response = api_instance.controller_nft_collections(chain, body)
     pprint(api_response)
 except ApiException as e:
     print("Exception when calling NftApi->controller_nft_collections: %s\n" % e)
@@ -204,8 +205,8 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**BuyRequest**](BuyRequest.md)|  | 
  **chain** | **str**| eg:eth,avax,polygon,arbitrum,optimism,solana chain code  | 
+ **body** | [**BuyRequest**](BuyRequest.md)|  | 
 
 ### Return type
 
@@ -243,7 +244,7 @@ chain = 'chain_example' # str | eg:eth,avax,polygon,arbitrum,optimism,solana cha
 address = 'address_example' # str | 0x16f71d593bc6446a16ef84551cf8d76ff5973db1 collection address 
 token_id = 'token_id_example' # str | eg:2 nft id 
 code = 'code_example' # str | eg:MTAwMDAwMDAwMDAwMDAwMF8yNTQx response code  (optional)
-amount = 1.2 # float | eg:1 only sudoswap needs  (optional)
+amount = 8.14 # float | eg:1 only sudoswap needs  (optional)
 
 try:
     # NFT Detail 
@@ -273,7 +274,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -329,7 +330,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -383,13 +384,13 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **controller_nft_import_asset**
-> CheckOrderResponse controller_nft_import_asset(body, chain)
+> CheckOrderResponse controller_nft_import_asset(chain, body)
 
 Order Status 
 
@@ -405,12 +406,12 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = openocean_api.NftApi()
-body = openocean_api.CheckOrderRequest() # CheckOrderRequest | 
 chain = 'chain_example' # str | eg:eth,avax,polygon,arbitrum,optimism,solana chain code 
+body = openocean_api.CheckOrderRequest() # CheckOrderRequest | 
 
 try:
     # Order Status 
-    api_response = api_instance.controller_nft_import_asset(body, chain)
+    api_response = api_instance.controller_nft_import_asset(chain, body)
     pprint(api_response)
 except ApiException as e:
     print("Exception when calling NftApi->controller_nft_import_asset: %s\n" % e)
@@ -420,8 +421,8 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**CheckOrderRequest**](CheckOrderRequest.md)|  | 
  **chain** | **str**| eg:eth,avax,polygon,arbitrum,optimism,solana chain code  | 
+ **body** | [**CheckOrderRequest**](CheckOrderRequest.md)|  | 
 
 ### Return type
 
@@ -439,7 +440,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **controller_nft_offer**
-> SwapResponse controller_nft_offer(body, chain)
+> SwapResponse controller_nft_offer(chain, body)
 
 Swap Token 
 
@@ -455,12 +456,12 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = openocean_api.NftApi()
-body = openocean_api.SwapRequest() # SwapRequest | 
 chain = 'chain_example' # str | eg:eth,avax,polygon,arbitrum,optimism,solana chain code 
+body = openocean_api.SwapRequest() # SwapRequest | 
 
 try:
     # Swap Token 
-    api_response = api_instance.controller_nft_offer(body, chain)
+    api_response = api_instance.controller_nft_offer(chain, body)
     pprint(api_response)
 except ApiException as e:
     print("Exception when calling NftApi->controller_nft_offer: %s\n" % e)
@@ -470,8 +471,8 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**SwapRequest**](SwapRequest.md)|  | 
  **chain** | **str**| eg:eth,avax,polygon,arbitrum,optimism,solana chain code  | 
+ **body** | [**SwapRequest**](SwapRequest.md)|  | 
 
 ### Return type
 
@@ -541,7 +542,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -595,7 +596,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -649,7 +650,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -703,13 +704,13 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **controller_nft_sell**
-> QuoteResponse controller_nft_sell(chain)
+> QuoteResponse controller_nft_sell(chain, body)
 
 Quote Token 
 
@@ -726,10 +727,11 @@ from pprint import pprint
 # create an instance of the API class
 api_instance = openocean_api.NftApi()
 chain = 'chain_example' # str | eg:eth,avax,polygon,arbitrum,optimism,solana chain code 
+body = [openocean_api.list[ERRORUNKNOWN]()] # list[ERRORUNKNOWN] | swapItem 
 
 try:
     # Quote Token 
-    api_response = api_instance.controller_nft_sell(chain)
+    api_response = api_instance.controller_nft_sell(chain, body)
     pprint(api_response)
 except ApiException as e:
     print("Exception when calling NftApi->controller_nft_sell: %s\n" % e)
@@ -740,6 +742,7 @@ except ApiException as e:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **chain** | **str**| eg:eth,avax,polygon,arbitrum,optimism,solana chain code  | 
+ **body** | [**list[ERRORUNKNOWN]**](.md)| swapItem  | 
 
 ### Return type
 
@@ -757,7 +760,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **controller_nft_sign**
-> CancelResponse controller_nft_sign(body, chain)
+> CancelResponse controller_nft_sign(chain, body)
 
 Cancel 
 
@@ -773,12 +776,12 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = openocean_api.NftApi()
-body = openocean_api.CancelRequest() # CancelRequest | 
 chain = 'chain_example' # str | eg:eth,avax,polygon,arbitrum,optimism,solana chain code 
+body = openocean_api.CancelRequest() # CancelRequest | 
 
 try:
     # Cancel 
-    api_response = api_instance.controller_nft_sign(body, chain)
+    api_response = api_instance.controller_nft_sign(chain, body)
     pprint(api_response)
 except ApiException as e:
     print("Exception when calling NftApi->controller_nft_sign: %s\n" % e)
@@ -788,8 +791,8 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**CancelRequest**](CancelRequest.md)|  | 
  **chain** | **str**| eg:eth,avax,polygon,arbitrum,optimism,solana chain code  | 
+ **body** | [**CancelRequest**](CancelRequest.md)|  | 
 
 ### Return type
 
@@ -859,7 +862,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -913,7 +916,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)

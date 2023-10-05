@@ -1,11 +1,12 @@
 # openocean_api.LimitOrderApi
 
-All URIs are relative to *https://open-api.openocean.finance/*
+All URIs are relative to *https://open-api.openocean.finance*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**controller_limit_order_create**](LimitOrderApi.md#controller_limit_order_create) | **GET** /v1/{chainId}/limit-order/address/{address} | list by address 
 [**controller_limit_order_update**](LimitOrderApi.md#controller_limit_order_update) | **GET** /v1/{chainId}/limit-order/all | list all 
+
 
 # **controller_limit_order_create**
 > controller_limit_order_create(chain_id, address, statuses=statuses)
@@ -40,7 +41,7 @@ except ApiException as e:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **chain_id** | **str**| eg: 1 chain id  | 
- **address** | **str**| eg:0x000... user&#x27;s wallet address  | 
+ **address** | **str**| eg:0x000... user&#39;s wallet address  | 
  **statuses** | **str**| eg:[1,3,4] order status code 1-unfill, 3-cancel,  | [optional] 
 
 ### Return type
@@ -53,8 +54,8 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: Not defined
+ - **Content-Type**: application/json
+ - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
@@ -102,8 +103,8 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: Not defined
+ - **Content-Type**: application/json
+ - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 

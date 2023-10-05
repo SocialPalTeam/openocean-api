@@ -1,6 +1,6 @@
 # openocean_api.CrossApi
 
-All URIs are relative to *https://open-api.openocean.finance/*
+All URIs are relative to *https://open-api.openocean.finance*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -8,6 +8,7 @@ Method | HTTP request | Description
 [**controller_cross_get_cross_transaction**](CrossApi.md#controller_cross_get_cross_transaction) | **GET** /cross_chain/v1/cross/getCrossTransaction | get cross transaction 
 [**controller_cross_min_send**](CrossApi.md#controller_cross_min_send) | **GET** /cross_chain/v1/cross/getMinSend | get min send 
 [**controller_cross_quote_by_oo**](CrossApi.md#controller_cross_quote_by_oo) | **GET** /cross_chain/v1/cross/quoteByOO | cross route 
+
 
 # **controller_cross_get_cross_status**
 > controller_cross_get_cross_status(chain_id, hash)
@@ -26,7 +27,7 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = openocean_api.CrossApi()
-chain_id = 1.2 # float | eg:56 chainId 
+chain_id = 8.14 # float | eg:56 chainId 
 hash = 'hash_example' # str | eg:0xb6a66f9676ed430407bc8b96063c8aab5ca663c45ec5d63047ade44061475e4a 
 
 try:
@@ -53,8 +54,8 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: Not defined
+ - **Content-Type**: application/json
+ - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
@@ -100,8 +101,8 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: Not defined
+ - **Content-Type**: application/json
+ - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
@@ -122,8 +123,8 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = openocean_api.CrossApi()
-from_chain_id = 1.2 # float | source_chain 
-to_chain_id = 1.2 # float | dst_chain 
+from_chain_id = 8.14 # float | source_chain 
+to_chain_id = 8.14 # float | dst_chain 
 address = 'address_example' # str | eg: 0x55d398326f99059ff775485246999027b3197955 token address 
 
 try:
@@ -151,8 +152,8 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: Not defined
+ - **Content-Type**: application/json
+ - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
@@ -173,8 +174,8 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = openocean_api.CrossApi()
-from_chain_id = 1.2 # float | eg:56 source chain 
-to_chain_id = 1.2 # float | eg:137 dst chain 
+from_chain_id = 8.14 # float | eg:56 source chain 
+to_chain_id = 8.14 # float | eg:137 dst chain 
 from_symbol = 'from_symbol_example' # str | eg:USDT source chain token symbol 
 to_symbol = 'to_symbol_example' # str | eg:USDT dst chain token symbol 
 amount = 'amount_example' # str | eg: 100000000 with decimals, 100 decimals is 6, amount 100000000 
@@ -206,8 +207,8 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: Not defined
+ - **Content-Type**: application/json
+ - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 

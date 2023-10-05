@@ -3,8 +3,8 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**collection** | [**ActivityCollection**](ActivityCollection.md) |  | 
-**token** | [**ActivityToken**](ActivityToken.md) |  | 
+**collection** | [**ActivityCollection**](ActivityCollection.md) | collection info | 
+**token** | [**ActivityToken**](ActivityToken.md) | token info | 
 **type** | **str** | activity type | 
 **amount** | **float** | nft count | 
 **from_address** | **str** | from address | 
@@ -13,4 +13,5 @@ Name | Type | Description | Notes
 **timestamp** | **float** | time | 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+
 

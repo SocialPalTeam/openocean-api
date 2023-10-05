@@ -1,11 +1,12 @@
 # openocean_api.WalletApi
 
-All URIs are relative to *https://open-api.openocean.finance/*
+All URIs are relative to *https://open-api.openocean.finance*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**controller_wallet_create_wallet**](WalletApi.md#controller_wallet_create_wallet) | **GET** /v3/{chain}/createWallet | create wallet 
 [**controller_wallet_get_balance**](WalletApi.md#controller_wallet_get_balance) | **GET** /v3/{chain}/getBalance | get balance 
+
 
 # **controller_wallet_create_wallet**
 > controller_wallet_create_wallet(chain)
@@ -49,8 +50,8 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: Not defined
+ - **Content-Type**: application/json
+ - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
@@ -87,7 +88,7 @@ except ApiException as e:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **chain** | **str**| eg: bsc chain code  | 
- **account** | **str**| eg: 0x000... user&#x27;s wallet address  | 
+ **account** | **str**| eg: 0x000... user&#39;s wallet address  | 
  **in_token_address** | **str**| eg: token address  | 
 
 ### Return type
@@ -100,8 +101,8 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: Not defined
+ - **Content-Type**: application/json
+ - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 

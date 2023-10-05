@@ -1,6 +1,6 @@
 # openocean_api.SwapApi
 
-All URIs are relative to *https://open-api.openocean.finance/*
+All URIs are relative to *https://open-api.openocean.finance*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -8,6 +8,7 @@ Method | HTTP request | Description
 [**controller_swap_quote**](SwapApi.md#controller_swap_quote) | **GET** /v3/{chain}/quote | quote 
 [**controller_swap_swap_quote**](SwapApi.md#controller_swap_swap_quote) | **GET** /v3/{chain}/swap_quote | swap_quote 
 [**controller_swap_token_list**](SwapApi.md#controller_swap_token_list) | **GET** /v3/{chain}/tokenList | tokenList 
+
 
 # **controller_swap_get_transaction**
 > controller_swap_get_transaction(chain, hash)
@@ -53,8 +54,8 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: Not defined
+ - **Content-Type**: application/json
+ - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
@@ -110,8 +111,8 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: Not defined
+ - **Content-Type**: application/json
+ - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
@@ -157,7 +158,7 @@ Name | Type | Description  | Notes
  **amount** | **str**| eg: 1 token amount without decimals  | 
  **slippage** | **str**| eg: 1 1% means 1, max 50  | 
  **gas_price** | **str**| eg: 5 without decimals  | 
- **account** | **str**| eg: 0x000... user&#x27;s wallet address  | 
+ **account** | **str**| eg: 0x000... user&#39;s wallet address  | 
 
 ### Return type
 
@@ -169,8 +170,8 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: Not defined
+ - **Content-Type**: application/json
+ - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
@@ -216,8 +217,8 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: Not defined
+ - **Content-Type**: application/json
+ - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 

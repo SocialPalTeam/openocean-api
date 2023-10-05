@@ -14,10 +14,11 @@ Name | Type | Description | Notes
 **token_count** | **float** | nft count | 
 **on_sale_count** | **float** | nft listing count | 
 **floor_ask_price** | **float** | floor price | 
-**floor_price** | [**FloorPrice**](FloorPrice.md) |  | [optional] 
-**volume** | [**Volume**](Volume.md) |  | [optional] 
-**volume_change** | [**Volume**](Volume.md) |  | [optional] 
+**floor_price** | [**FloorPrice**](FloorPrice.md) | floor price object | [optional] 
+**volume** | [**Volume**](Volume.md) | volume | [optional] 
+**volume_change** | [**Volume**](Volume.md) | volume | [optional] 
 **is_verified** | **bool** | is verified | 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+
 

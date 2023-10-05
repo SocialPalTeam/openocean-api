@@ -9,7 +9,8 @@ Name | Type | Description | Notes
 **end_at** | **float** | end time | 
 **amount** | **float** | order quantity | 
 **code** | **str** | code | 
-**payment_asset** | [**OrderPaymentAsset**](OrderPaymentAsset.md) |  | 
+**payment_asset** | [**OrderPaymentAsset**](OrderPaymentAsset.md) | pay token info | 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+
 
