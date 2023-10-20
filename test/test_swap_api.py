@@ -29,6 +29,13 @@ class TestSwapApi(unittest.TestCase):
     def tearDown(self):
         pass
 
+    def test_controller_swap_dex_list(self):
+        """Test case for controller_swap_dex_list
+
+        dexList   # noqa: E501
+        """
+        pass
+
     def test_controller_swap_get_transaction(self):
         """Test case for controller_swap_get_transaction
 

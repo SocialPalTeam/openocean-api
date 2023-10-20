@@ -93,6 +93,7 @@ Class | Method | HTTP request | Description
 *NftApi* | [**controller_nft_sign**](docs/NftApi.md#controller_nft_sign) | **POST** /nft/v1/{chain}/cancel | Cancel 
 *NftApi* | [**controller_nft_swap**](docs/NftApi.md#controller_nft_swap) | **GET** /nft/v1/{chain}/collection/activity | Collection Activity 
 *NftApi* | [**controller_nft_testscan**](docs/NftApi.md#controller_nft_testscan) | **GET** /nft/v1/{chain}/offers | Offers 
+*SwapApi* | [**controller_swap_dex_list**](docs/SwapApi.md#controller_swap_dex_list) | **GET** /v3/{chain}/dexList | dexList 
 *SwapApi* | [**controller_swap_get_transaction**](docs/SwapApi.md#controller_swap_get_transaction) | **GET** /v3/{chain}/getTransaction | getTransaction 
 *SwapApi* | [**controller_swap_quote**](docs/SwapApi.md#controller_swap_quote) | **GET** /v3/{chain}/quote | quote 
 *SwapApi* | [**controller_swap_swap_quote**](docs/SwapApi.md#controller_swap_swap_quote) | **GET** /v3/{chain}/swap_quote | swap_quote 

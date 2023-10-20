@@ -33,6 +33,105 @@ class SwapApi(object):
             api_client = ApiClient()
         self.api_client = api_client
 
+    def controller_swap_dex_list(self, chain, **kwargs):  # noqa: E501
+        """dexList   # noqa: E501
+
+        get Dexes List   # noqa: E501
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please pass async_req=True
+        >>> thread = api.controller_swap_dex_list(chain, async_req=True)
+        >>> result = thread.get()
+
+        :param async_req bool
+        :param str chain: get Dexes List  (required)
+        :return: None
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+        kwargs['_return_http_data_only'] = True
+        if kwargs.get('async_req'):
+            return self.controller_swap_dex_list_with_http_info(chain, **kwargs)  # noqa: E501
+        else:
+            (data) = self.controller_swap_dex_list_with_http_info(chain, **kwargs)  # noqa: E501
+            return data
+
+    def controller_swap_dex_list_with_http_info(self, chain, **kwargs):  # noqa: E501
+        """dexList   # noqa: E501
+
+        get Dexes List   # noqa: E501
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please pass async_req=True
+        >>> thread = api.controller_swap_dex_list_with_http_info(chain, async_req=True)
+        >>> result = thread.get()
+
+        :param async_req bool
+        :param str chain: get Dexes List  (required)
+        :return: None
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        all_params = ['chain']  # noqa: E501
+        all_params.append('async_req')
+        all_params.append('_return_http_data_only')
+        all_params.append('_preload_content')
+        all_params.append('_request_timeout')
+
+        params = locals()
+        for key, val in six.iteritems(params['kwargs']):
+            if key not in all_params:
+                raise TypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method controller_swap_dex_list" % key
+                )
+            params[key] = val
+        del params['kwargs']
+        # verify the required parameter 'chain' is set
+        if self.api_client.client_side_validation and ('chain' not in params or
+                                                       params['chain'] is None):  # noqa: E501
+            raise ValueError("Missing the required parameter `chain` when calling `controller_swap_dex_list`")  # noqa: E501
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'chain' in params:
+            path_params['chain'] = params['chain']  # noqa: E501
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = []
+        local_var_files = {}
+
+        body_params = None
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.select_header_accept(
+            ['application/json'])  # noqa: E501
+
+        # HTTP header `Content-Type`
+        header_params['Content-Type'] = self.api_client.select_header_content_type(  # noqa: E501
+            ['application/json'])  # noqa: E501
+
+        # Authentication setting
+        auth_settings = []  # noqa: E501
+
+        return self.api_client.call_api(
+            f'/v3/{chain}/dexList', 'GET',
+            path_params,
+            query_params,
+            header_params,
+            body=body_params,
+            post_params=form_params,
+            files=local_var_files,
+            response_type=None,  # noqa: E501
+            auth_settings=auth_settings,
+            async_req=params.get('async_req'),
+            _return_http_data_only=params.get('_return_http_data_only'),
+            _preload_content=params.get('_preload_content', True),
+            _request_timeout=params.get('_request_timeout'),
+            collection_formats=collection_formats)
+
     def controller_swap_get_transaction(self, chain, hash, **kwargs):  # noqa: E501
         """getTransaction   # noqa: E501
 
@@ -156,6 +255,8 @@ class SwapApi(object):
         :param str amount: eg: 1 token amount without decimals  (required)
         :param str slippage: eg: 1 1% means 1, max 50  (required)
         :param str gas_price: eg: 5 without decimals  (required)
+        :param str enabled_dex_ids: ID of dexes that can be accessed through dexList endpoint
+        :param str disabled_dex_ids: ID of dexes that can be accessed through dexList endpoint
         :return: None
                  If the method is called asynchronously,
                  returns the request thread.
@@ -183,12 +284,14 @@ class SwapApi(object):
         :param str amount: eg: 1 token amount without decimals  (required)
         :param str slippage: eg: 1 1% means 1, max 50  (required)
         :param str gas_price: eg: 5 without decimals  (required)
+        :param str enabled_dex_ids: ID of dexes that can be accessed through dexList endpoint
+        :param str disabled_dex_ids: ID of dexes that can be accessed through dexList endpoint
         :return: None
                  If the method is called asynchronously,
                  returns the request thread.
         """
 
-        all_params = ['chain', 'in_token_address', 'out_token_address', 'amount', 'slippage', 'gas_price']  # noqa: E501
+        all_params = ['chain', 'in_token_address', 'out_token_address', 'amount', 'slippage', 'gas_price', 'enabled_dex_ids', 'disabled_dex_ids']  # noqa: E501
         all_params.append('async_req')
         all_params.append('_return_http_data_only')
         all_params.append('_preload_content')
@@ -245,6 +348,10 @@ class SwapApi(object):
             query_params.append(('slippage', params['slippage']))  # noqa: E501
         if 'gas_price' in params:
             query_params.append(('gasPrice', params['gas_price']))  # noqa: E501
+        if 'enabled_dex_ids' in params:
+            query_params.append(('enabledDexIds', params['enabled_dex_ids']))  # noqa: E501
+        if 'disabled_dex_ids' in params:
+            query_params.append(('disabledDexIds', params['disabled_dex_ids']))  # noqa: E501
 
         header_params = {}
 
@@ -296,6 +403,11 @@ class SwapApi(object):
         :param str slippage: eg: 1 1% means 1, max 50  (required)
         :param str gas_price: eg: 5 without decimals  (required)
         :param str account: eg: 0x000... user's wallet address  (required)
+        :param str sender: The caller address.  Token Delivery Logic If a sender address is specified,   the sender address will be set as sender(caller), and account address will be set as receiver. If no sender address is specified, the account address will automatically be set as the sender(caller) and receiver.'
+        :param str enabled_dex_ids: ID of dexes that can be accessed through dexList endpoint
+        :param str disabled_dex_ids: ID of dexes that can be accessed through dexList endpoint
+        :param str referrer: The wallet address used to be mark as partners and receive an extra referrerFee from user.
+        :param str referrer_fee: Specify the percentage of in-token you wish to receive from the transaction, within the range of 0% to 3%, with 1% represented as '1'.
         :return: None
                  If the method is called asynchronously,
                  returns the request thread.
@@ -324,12 +436,17 @@ class SwapApi(object):
         :param str slippage: eg: 1 1% means 1, max 50  (required)
         :param str gas_price: eg: 5 without decimals  (required)
         :param str account: eg: 0x000... user's wallet address  (required)
+        :param str sender: The caller address.  Token Delivery Logic If a sender address is specified,   the sender address will be set as sender(caller), and account address will be set as receiver. If no sender address is specified, the account address will automatically be set as the sender(caller) and receiver.'
+        :param str enabled_dex_ids: ID of dexes that can be accessed through dexList endpoint
+        :param str disabled_dex_ids: ID of dexes that can be accessed through dexList endpoint
+        :param str referrer: The wallet address used to be mark as partners and receive an extra referrerFee from user.
+        :param str referrer_fee: Specify the percentage of in-token you wish to receive from the transaction, within the range of 0% to 3%, with 1% represented as '1'.
         :return: None
                  If the method is called asynchronously,
                  returns the request thread.
         """
 
-        all_params = ['chain', 'in_token_address', 'out_token_address', 'amount', 'slippage', 'gas_price', 'account']  # noqa: E501
+        all_params = ['chain', 'in_token_address', 'out_token_address', 'amount', 'slippage', 'gas_price', 'account', 'sender', 'enabled_dex_ids', 'disabled_dex_ids', 'referrer', 'referrer_fee']  # noqa: E501
         all_params.append('async_req')
         all_params.append('_return_http_data_only')
         all_params.append('_preload_content')
@@ -392,6 +509,16 @@ class SwapApi(object):
             query_params.append(('gasPrice', params['gas_price']))  # noqa: E501
         if 'account' in params:
             query_params.append(('account', params['account']))  # noqa: E501
+        if 'sender' in params:
+            query_params.append(('sender', params['sender']))  # noqa: E501
+        if 'enabled_dex_ids' in params:
+            query_params.append(('enabledDexIds', params['enabled_dex_ids']))  # noqa: E501
+        if 'disabled_dex_ids' in params:
+            query_params.append(('disabledDexIds', params['disabled_dex_ids']))  # noqa: E501
+        if 'referrer' in params:
+            query_params.append(('referrer', params['referrer']))  # noqa: E501
+        if 'referrer_fee' in params:
+            query_params.append(('referrerFee', params['referrer_fee']))  # noqa: E501
 
         header_params = {}
 
